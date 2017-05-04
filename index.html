@@ -15,13 +15,23 @@
 
 <body>
 
-<h1 class="expand-on-scroll">
-    Jacob Brunsting
-</h1>
-<p class="subheading">
-    2nd year Computer Science student at the University of Waterloo
-</p>
-<h2 class="expand-on-scroll">About Me</h2>
+<!--canvas class="animation-canvas" width="1000" height="250"></canvas-->
+
+<div class="nav-section">
+    <div>
+        <ul id="nav-list">
+        </ul>
+    </div>
+</div>
+<div id="home" data-nav-title="Home" class="title-section in-nav">
+    <h1>
+        Jacob Brunsting
+    </h1>
+    <p class="subheading">
+        2nd year Computer Science student at the University of Waterloo
+    </p>
+</div>
+<h2 id="aboutMe" data-nav-title="About Me" class="expand-on-scroll in-nav">About Me</h2>
 <p class="description">
     I am a second year student at the University of Waterloo, in the
     Computer Science Co-op program. I enjoy learning more about software 
@@ -29,8 +39,8 @@
     I am especially interested in continuing to gain experience in back end development.
 </p>
 
-<h2 class="expand-on-scroll">Skills</h2>
-<h3>Communication Skills</h3>
+<h2 id="skills" data-nav-title="Skills" class="expand-on-scroll in-nav">Skills</h2>
+<h3 class="expand-on-scroll">Communication Skills</h3>
 <p class="description">
     At my first co-op position, I worked on an Android app with a variety of
     developers of varying skill levels, requiring me to clearly explain what
@@ -74,7 +84,7 @@
     introducing me to important design patterns and common algorithms, and 
     teaching me proper programming practices.
 </p>
-<h2 class="expand-on-scroll">Work Experience</h2>
+<h2 id="workExperience" data-nav-title="Work Experience" class="expand-on-scroll in-nav">Work Experience</h2>
 <h3 class="expand-on-scroll">TribalScale <span class="heading_date">(January - April 2017)</span></h3>
 <p class="description">
     At TribalScale I had the opportunity to pair with senior software
@@ -103,7 +113,7 @@
     co-op term, and said that I was a 'great team member' with 'great
     communication skills.'
 </p>
-<h2 class="expand-on-scroll">Projects</h2>
+<h2 id="projects" data-nav-title="Projects" class="expand-on-scroll in-nav">Projects</h2>
 <script src="scripts.js"></script>
 
 </body>
