@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-
+<meta name="viewport" content="initial-scale=1">
 <meta charset="utf-8">
 <title>Jacob Brunsting</title>
 <meta name="description" content="Jacob Brunsting">
@@ -31,12 +31,22 @@
         2nd year Computer Science student at the University of Waterloo
     </p>
 </div>
-<h2 id="aboutMe" data-nav-title="About Me" class="expand-on-scroll in-nav">About Me</h2>
+<h2 id="about-me" data-nav-title="About Me" class="expand-on-scroll in-nav">About Me</h2>
 <p class="description">
     I am a second year student at the University of Waterloo, in the
     Computer Science Co-op program. I enjoy learning more about software 
     development, both in my classes, and through personal projects and work experience.
     I am especially interested in continuing to gain experience in back end development.
+</p>
+<p class="description">
+    I like spaces more than tabs (as long as the tab key is configured to 
+    insert 4 spaces) and vim more than emacs. My favourite programming
+    language is either C++ or Java.
+</p>
+<p class="description">
+    Outside of my classes and work, I enjoy going for bike rides at the Hydro
+    Cut in Waterloo, going camping and hiking at various campgrounds around
+    Ontario, and watching Better Call Saul or The Office.
 </p>
 
 <h2 id="skills" data-nav-title="Skills" class="expand-on-scroll in-nav">Skills</h2>
@@ -53,28 +63,30 @@
     approaching problems.
 </p>
 <h3 class="expand-on-scroll">Programming Languages</h3>
-<table class="description">
-    <tr>
-        <th>Experience in the workplace</th>
-        <th>Learned through classes</th>
-        <th>Used in <a href="https://github.com/JacobBrunsting">personal projects</a></th>
-    </tr>
-    <tr>
-        <td>Java (Android)</td>
-        <td>C++</td>
-        <td>Node.js</td>
-    </tr>
-    <tr>
-        <td>Javascript (React + Redux)</td>
-        <td>C</td>
-        <td>Javascript (Angular.js)</td>
-    </tr>
-    <tr>
-        <td>CSS</td>
-        <td>Racket</td>
-        <td>Python</td>
-    </tr>
-</table>
+<div class="skills_table_wrapper">
+    <table class="description">
+        <tr>
+            <th>Experience in the workplace</th>
+            <th>Learned through classes</th>
+            <th>Used in <a href="https://github.com/JacobBrunsting">personal projects</a></th>
+        </tr>
+        <tr>
+            <td>Java (Android)</td>
+            <td>C++</td>
+            <td>Node.js</td>
+        </tr>
+        <tr>
+            <td>Javascript (React + Redux)</td>
+            <td>C</td>
+            <td>Javascript (Angular.js)</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Racket</td>
+            <td>Python</td>
+        </tr>
+    </table>
+</div>
 <h3 class="expand-on-scroll">Academics</h3>
 <p class="description">
     87% cumulative average
@@ -84,37 +96,254 @@
     introducing me to important design patterns and common algorithms, and 
     teaching me proper programming practices.
 </p>
-<h2 id="workExperience" data-nav-title="Work Experience" class="expand-on-scroll in-nav">Work Experience</h2>
+<h2 id="work-experience" data-nav-title="Work Experience" class="expand-on-scroll in-nav">Work Experience</h2>
 <h3 class="expand-on-scroll">TribalScale <span class="heading_date">(January - April 2017)</span></h3>
 <p class="description">
     At TribalScale I had the opportunity to pair with senior software
     developers through their use of the XP design methodology. I worked with
-    various developers on several projects, including an Android app, and a 
-    website (written in Javascript using React and Redux)
+    various developers on projects for various clients, including an 
+    Android app, and a website (written in Javascript using React and Node.js). 
 </p> 
-<p class="description">
-    Pairing with other developers
-    improved my communication skills, and also allowed me to learn how they 
-    write code, and have my coding technique improved by their critiques as
-    I am writting.
-</p>
 <h3 class="expand-on-scroll">WeMesh <span class="heading_date">(May - August 2016)</span></h3>
 <p class="description">
     At WeMesh, I worked on developing their Android app that allows you to
     watch videos while chatting with your friends over text and Voip. At
     WeMesh I had significant independence, and was able to influence the 
     direction of the app, working with the company founders to 
-    determine what new features to implement, and proposing large structural
-    changes and refactors to the code base, which I independently carried out.
-</p>
-<p class="description">
-    My employers at WeMesh gave me a rating of 'Outstanding' (the highest 
-    possible rating in the University of Waterloo co-op system) after my 
-    co-op term, and said that I was a 'great team member' with 'great
-    communication skills.'
+    determine what new features to implement, and proposing and implementing 
+    large structural changes and refactors to the code base.
 </p>
 <h2 id="projects" data-nav-title="Projects" class="expand-on-scroll in-nav">Projects</h2>
+<p class="description">
+    You can see all of my projects on my
+    <a href="https://github.com/JacobBrunsting">Github Profile</a>.
+</p>
+<p class="description">
+    My most recent (and largest) project is a social media website called 
+    OpenWindow. It is a location based website that allows you to make text
+    posts, and see and comment on posts from people in your geographic region.
+    It is set up in two layers with a load balancer - one layer to server
+    up the website and direct traffic, and another to manage the storage and
+    backup of the posts. The layers are horizontally scalable, and any server
+    failure is automatically detected and recovered from without any loss of
+    data, in ~30 seconds. It is not currently live, but you can see the code 
+    <a href="https://github.com/JacobBrunsting/openwindow">here</a>. It is
+    written in Node.js with MongoDB as the database, and with an Angular 1 
+    frontend (although the front end is a bit neglected).
+</p>
+<h2 id="transcript" data-nav-title="Transcript" class="expand-on-scroll in-nav">Transcript</h2>
+    <div class="main">
+        <div class="transcript_wrapper">
+            <table id="transcript_table">
+                <tr>
+                    <th class="transcript_header">
+                        <div class="header_wrapper">
+                            <div class="cell_wrapper">Course</div>
+                            <div class="arrows neutral">
+                                <p class="top_arrow">▴</p>
+                                <p class="bottom_arrow">▾</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="transcript_header">
+                        <div class="header_wrapper">
+                            <div class="cell_wrapper">Description</div>
+                            <div class="arrows neutral">
+                                <p class="top_arrow">▴</p>
+                                <p class="bottom_arrow">▾</p>
+                            </div>
+                        </div>
+                    </th>
+                    <th class="transcript_header">
+                        <div class="header_wrapper">
+                            <div class="cell_wrapper">Grade</div>
+                            <div class="arrows neutral">
+                                <p class="top_arrow">▴</p>
+                                <p class="bottom_arrow">▾</p>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">CS 135</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Designing Functional Programs</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">88</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">ENGL 109</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Introduction to Academic Writing</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">90</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">MATH 135</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Algebra for Honors Mathematics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">84</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">MATH 137</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Calculus 1 for Honors Mathematics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">84</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">PHYS 121</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Mechanics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">93</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">CS 136</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Elementary Algorithm Design and Data Abstraction</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">85</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">ECON 101</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Introduction to Microeconomics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">87</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">MATH 136</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Linear Algebra 1 for Honors Mathematics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">87</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">MATH 138</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Calculus 2 for Honors Mathematics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">84</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">PHYS 122</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Waves, Electricity, and Magnetism</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">94</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">CS 245</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Logic and Computation</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">87</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">CS 246</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Object-Oriented Software Development</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">81</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">ENGL 119</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Communications in Math & CS</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">90</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">MATH 239</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Intro to Combinatorics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">81</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">PHYS 256</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Geometric & Physical Optics</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">97</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cell_wrapper">STAT 230</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">Probability</div>
+                    </td>
+                    <td>
+                        <div class="cell_wrapper">83</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 <script src="scripts.js"></script>
-
+<script src="table_animation_setup.js"></script>
 </body>
 </html>
